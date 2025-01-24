@@ -1,0 +1,3 @@
+Question: Can I Use My Credit/Debit Card To Make Internet Or On-Line Purchases ?
+
+Answer: Yes. Credit/ATM/Prepaid Gift & Payroll cards issued by us can be used for making purchases onlineB. For safety and security of transactions, we have provided a facility for registering with 'Verified by Visa' or 'MasterCard SecureCode' depending on your card. This will enforce another password which is an additional level of securityC. However a few websites might not prompt you for this password, if so please do not do any further transactions on them in the interest of security
