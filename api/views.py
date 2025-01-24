@@ -61,11 +61,11 @@ def ragChat(request):
         if usersMemory.check_memory(id): 
             mem = usersMemory[id]
         else:
-            mem = Memory(system_prompt='You are a chat bot for Fast Bank. You should assist the users with their queries.')
+            mem = Memory(system_prompt='You are a chat bot for VIC Bank. You should assist the users with their queries.')
         answer = pipeline.invoke(text, mem)
         usersMemory[id] = mem
     else: 
-        answer = pipeline.invoke(text, system_prompt='You are a chat bot for Fast Bank. You should assist the users with their queries.')
+        answer = pipeline.invoke(text, system_prompt='You are a chat bot for VIC Bank. You should assist the users with their queries.')
 
     return JsonResponse({'answer': answer})
 

@@ -1,0 +1,118 @@
+.rag-chat-interface {
+    position: fixed;
+    width: 20vw;
+    height: 50vh;
+    min-width: 350px;
+    min-height: 400px;
+    right: 20px;
+    bottom: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+}
+
+.chat-head {
+    width: 100%;
+    height: 18%;
+    background: rgb(52, 159, 69);
+    background: linear-gradient(0deg, #8bc34a 40%, #4caf50 100%);
+    border-radius: 15px 15px 0 0;
+}
+
+.chat-head-text {
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.chat-date {
+    height: 20px;
+}
+
+.chat-date-text {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 5px 0 15px 0;
+}
+
+
+.user-chat {
+    display: flex;
+    width: fit-content;
+    background-color: rgb(206, 206, 206);
+    margin: 8px 8px 0 auto;
+    border-radius: 5px;
+}
+
+.user-chat-text {
+    max-width: 240px;
+    margin: 7px 7px 7px 10px;
+}
+
+.user-chat-time {
+    font-size: 9px;
+    margin: 2px 11px 5px auto;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.assistant-chat {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background-color: rgb(206, 206, 206);
+    margin: 8px 0 0 8px;
+    border-radius: 5px;
+}
+
+.assistant-chat-text {
+    max-width: 240px;
+    margin: 7px 10px 7px 7px;
+}
+
+.assistant-chat-time {
+    font-size: 9px;
+    margin: 2px 0 5px 10px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.loading {
+    width: 80px;
+    height: 100px;
+}
+
+
+.text-block {
+    display: flex;
+    position: relative;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(230, 230, 230, 0.5) 100%);
+    border-radius: 0 0 15px 15px;
+}
+
+#chat-text {
+    width: 80%;
+    height: 38px;
+    border-radius: 8px;
+    margin: 10px 0 10px 10px;
+    border-width: 1px;
+    border-color: rgb(194, 194, 194);
+}
+
+#send-button {
+    margin: 10px 0 0 10px;
+}
