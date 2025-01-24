@@ -60,7 +60,7 @@ An advanced Retrieval-Augmented Generation (RAG) API built using the Django fram
 
 Check out the demo video showcasing the chat interface:
 
-![Chat Interface Demo](https://github.com/user-attachments/assets/85c74bd2-3370-44a4-a35c-887a2b293bf4)
+https://github.com/user-attachments/assets/85c74bd2-3370-44a4-a35c-887a2b293bf4
 
 
 ## Project Structure
