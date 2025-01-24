@@ -1,4 +1,4 @@
-API_URL = 'http://0.tcp.ngrok.io:16410/api/';
+API_URL = '/api/';
 
 
 
