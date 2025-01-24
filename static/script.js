@@ -11,16 +11,23 @@ function generateChatId() {
     return result;
 }
 
+function scrollUp(x) {
+    var container = $('.chat-box');
+    container.animate({
+        scrollTop: container.scrollTop() + x
+    }, 500);
+}
+
 function addChatLoader() {
     var cId = generateChatId();
     var time = getTime();
     $(".chat-box").append(`
         <div class="assistant-chat" id="${cId}">
-            <img class="loading" src="./img/loading.gif">
+            <img class="loading" src="/static/img/loading.gif">
         </div>
         <p class="assistant-chat-time">${time}</p>
     `);
-    return cId
+    return cId;
 }
 
 
@@ -92,18 +99,24 @@ function sendPostRequest(url, data) {
     });
 }
 
-
-
-$('#send-button').click(function () {
+function SendMessage() {
     time = Date.now();
-    ctext = $('#chat-text').val().trim()
+    ctext = $('#chat-text').val().trim();
     if (ctext != "") {
-        addMessage(ctext, 'u')
-        $('#chat-text').val('')
+        addMessage(ctext, 'u');
+        $('#chat-text').val('');
         var cId = addChatLoader();
+        scrollUp(200);
         sendPostRequest(API_URL, { text: ctext }).then(function (response) {
             addMessage(response['answer'], 'a', cId);
         });
+    }
+}
+
+$('#send-button').click(SendMessage);
+$("#chat-text").keypress(function (event) {
+    if (event.key == 'Enter') {
+        SendMessage();
     }
 });
 
