@@ -44,7 +44,7 @@ An advanced Retrieval-Augmented Generation (RAG) API built using the Django fram
    python manage.py runserver
    ```
 
-5. Access the application at `http://127.0.0.1:8000`.
+5. Access the API at `http://127.0.0.1:8000/api/`.
 
 ### Setting Up Llama 3.2 3B Instruct
 
@@ -53,7 +53,7 @@ An advanced Retrieval-Augmented Generation (RAG) API built using the Django fram
 
 ## Usage
 
-- Open the interactive chat interface in your browser at `http://127.0.0.1:8000/chat`.
+- Open the interactive chat interface in your browser at `http://127.0.0.1:8000/web/`.
 - Start chatting with the bot to experience the retrieval-augmented generation.
 
 ## Showcase
@@ -87,5 +87,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ### Notes
 
 - Ensure that you have sufficient computational resources for running Llama 3.2 3B Instruct.
-- The showcase video demonstrates the basic chat interface interacting with the API. Replace `demo.mp4` with the actual video file's path if hosted locally or a URL if hosted online.
+- The showcase video demonstrates the basic chat interface interacting with the API.
 
